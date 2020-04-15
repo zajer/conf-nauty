@@ -4,6 +4,8 @@ homepage: "http://pallini.di.uniroma1.it/"
 authors: "http://pallini.di.uniroma1.it/Links.html#contact"
 bug-reports: "https://github.com/ocaml/opam-repository/issues"
 license: "Apache-2.0"
+build: ["pkg-config" "nauty"] {os!="macos"}
+depends: ["conf-pkg-config" {build & os!="macos"}]
 depexts: [
   ["libnauty2-dev"] {os-family = "debian"}
   ["libnauty-devel"] {os-distribution = "fedora"}
