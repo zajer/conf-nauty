@@ -7,10 +7,10 @@ license: "Apache-2.0"
 build: ["pkg-config" "nauty"] 
 depends: ["conf-pkg-config"]
 depexts: [
-  ["libnauty2-dev"] {os-family = "debian"}
+  ["libnauty2-dev"] {os-distribution = "ubuntu" | os-distribution = "debian" }
   ["libnauty-devel"] {os-distribution = "fedora"}
 ]
-available: [ os-distribution = "ubuntu" | os-distribution = "fedora" ]
+available: [ os-distribution = "ubuntu" | os-distribution = "fedora" | os-distribution = "debian" ]
 synopsis: "Virtual package relying on nauty"
 description:
   "This package can only install if the libnauty library is installed on the system."
