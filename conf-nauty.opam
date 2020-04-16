@@ -1,9 +1,9 @@
 opam-version: "2.0"
-version: "1.1.1"
+version: "1.1.2"
 maintainer: "Piotr Cybulski <pikus3@list.pl>"
 homepage: "http://pallini.di.uniroma1.it/"
 authors: "http://pallini.di.uniroma1.it/Links.html#contact"
-bug-reports: "https://github.com/zajer/conf-nauty/issues"
+bug-reports: "https://github.com/ocaml/opam-repository/issues"
 license: "Apache-2.0"
 build: ["pkg-config" "nauty"] 
 depends: ["conf-pkg-config"]
